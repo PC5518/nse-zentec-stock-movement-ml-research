@@ -5,12 +5,12 @@
 ![Architecture](https://img.shields.io/badge/Architecture-Ensemble%20Regression-orange)
 ![Status](https://img.shields.io/badge/Status-Production-brightgreen)
 ## ⚠️CAUTION: My statement: "I built a stochastic modeling pipeline to experiment with feature engineering and volatility prediction."
-## 🏗 System Abstract
+##  System Abstract
 This repository houses a **quantitative predictive modeling framework** designed to forecast short-term price volatility for NSE-listed equities (specifically *Zen Technologies*). 
 
 Unlike traditional price-target models, this system minimizes variance by training on **relative percentage returns** rather than absolute price values. It leverages an **Ensemble Learning architecture (Random Forest Regressor)** to detect non-linear dependencies between momentum indicators (RSI, SMA, EMA) and future price action, outputting a probabilistic **BUY/SELL/HOLD** signal based on a volatility confidence threshold.
 
-## 🚀 Key Technical Features
+##  Key Technical Features
 *   **Stochastic Data Pipeline:** Automated ingestion of OHLCV market data via `yfinance` APIs, supporting both historical backtesting (2000–Present) and real-time inference.
 *   **Vectorized Feature Engineering:** Utilizes `pandas` and the `ta` library to synthesize technical vectors:
     *   **SMA (5-day):** Trend smoothing for short-term signal detection.
@@ -19,7 +19,7 @@ Unlike traditional price-target models, this system minimizes variance by traini
 *   **Ensemble Regression:** Implements `RandomForestRegressor` (100 estimators) to mitigate overfitting common in single decision trees when applied to noisy financial time-series data.
 *   **Risk-Adjusted Decision Logic:** Generates signals only when predicted volatility exceeds a specific confidence threshold (>1%), effectively filtering out market noise.
 
-## 🧠 Methodology & Mathematical Logic
+##  Methodology & Mathematical Logic
 The system frames the market prediction problem as a supervised regression task, isolating price velocity from absolute value.
 
 ### 1. Target Variable Normalization
@@ -39,7 +39,7 @@ The Random Forest regressor optimizes for minimal **Mean Squared Error (MSE)** d
 
 $$ MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 $$
 
-## 📂 Repository Structure
+##  Repository Structure
 
 | File | Description |
 | :--- | :--- |
@@ -48,7 +48,7 @@ $$ MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 $$
 | `predict_zentec_percent.py` | **Inference Engine:** Fetches live trailing 60-day data, regenerates features, and computes next-day directional probability. |
 | `anscom_zentec_model_percent.pkl` | **Serialized Model:** The optimized Random Forest model artifact. |
 
-## 🛠 Usage & Installation
+##  Usage & Installation
 
 ### 1. Prerequisites
 Ensure the quantitative stack is installed:
@@ -73,7 +73,7 @@ Run the prediction engine to generate today's signal:
 code
 Bash
 python predict_zentec_percent.py
-  📊 Sample Output (Inference)
+   Sample Output (Inference)
 code
 Text
 📆 Date: 2025-07-15

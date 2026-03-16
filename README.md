@@ -62,7 +62,7 @@ To refresh the historical dataset:
 code
 Python
 # Run the extraction script
-import yfinance as yf
+import yfinance as  yf
 data = yf.download("ZENTEC.NS", start="2000-01-01", end="2025-07-15")
 data.to_csv("zentec_stock_data.csv")
 3. Model Training

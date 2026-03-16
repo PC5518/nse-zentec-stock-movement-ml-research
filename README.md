@@ -25,7 +25,9 @@ The system frames the market prediction problem as a supervised regression task,
 ### 1. Target Variable Normalization
 To ensure the model is robust against historical price inflation and stock splits, the target variable $y$ is defined as the relative percentage change ($R_t$):
 
+
 $$ y_t = \frac{P_{t+1} - P_t}{P_t} $$
+
 
 Where $P_t$ is the closing price at time $t$.
 

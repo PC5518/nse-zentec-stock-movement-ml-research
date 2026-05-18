@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Production-brightgreen)
 ## ⚠️CAUTION: My statement: "I built a stochastic modeling pipeline to experiment with feature engineering and volatility prediction."
 ##  System Abstract
-This repository houses a **quantitative predictive modeling framework** designed to forecast short-term price volatility for NSE-listed equities (specifically *Zen Technologies*). 
+This repository houses a **machine-learning research project** designed to forecast short-term price volatility for NSE-listed equities (specifically *Zen Technologies*). 
 
 
 Unlike traditional price-target models, this system minimizes variance by training on **relative percentage returns** rather than absolute price values. It leverages an **Ensemble Learning architecture (Random Forest Regressor)** to detect non-linear dependencies between momentum indicators (RSI, SMA, EMA) and future price action, outputting a probabilistic **BUY/SELL/HOLD** signal based on a volatility confidence threshold.

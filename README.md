@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Architecture](https://img.shields.io/badge/Architecture-Ensemble%20Regression-orange)
-![Status](https://img.shields.io/badge/Status-Production-brightgreen)
+![Status](https://img.shields.io/badge/Status-intesting-brightgreen)
 ## ⚠️CAUTION: My statement: "I built a stochastic modeling pipeline to experiment with feature engineering and volatility prediction."
 ##  System Abstract
 This repository houses a **machine-learning research project** designed to forecast short-term price volatility for NSE-listed equities (specifically *Zen Technologies*). 
